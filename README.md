@@ -51,7 +51,7 @@ $(function() {
   $("body").prognroll();
 });
 ```
-[Quick body demo on CodePen](http://codepen.io/mburakerman/pen/XjOpNz)
+[Quick body demo on CodePen](http://codepen.io/anon/pen/GjzArK)
 
 Use custom div
 ```html
