@@ -18,18 +18,22 @@ or use CDN
 To see scrolling progress on your page, you need to activate ProngnRoll.
 
 ```js
-$("body").prognroll();
+$(function() {
+  $("body").prognroll();
+});
 ```
 Thats it! It's active now!
 
 You can also customize the progress bar.These are default settings.
 
 ```js
+$(function() {
 $("body").prognroll({
 height:5,        //Progress bar height
 color:"#50bcb6", //Progress bar background color
 position:"top",  //Progress bar position can be "top" or "bottom"
 custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page.	
+});
 });
 ```
 
@@ -43,7 +47,9 @@ Use body
 </body>
 ```
 ```js
-$("body").prognroll();
+$(function() {
+  $("body").prognroll();
+});
 ```
 [Quick body demo on CodePen](http://codepen.io/mburakerman/pen/XjOpNz)
 
@@ -55,8 +61,10 @@ Use custom div
 ```
 
 ```js
+$(function() {
 $(".box").prognroll({
 custom:true
+});
 });
 ```
 [Quick custom div demo on CodePen](http://codepen.io/anon/pen/WGPoxm)
