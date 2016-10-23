@@ -59,7 +59,7 @@ $(".box").prognroll({
 custom:true
 });
 ```
-[Quick custom div demo on CodePen](https://codepen.io/).
+[Quick custom div demo on CodePen](http://codepen.io/anon/pen/WGPoxm)
 
 ### Size
 
