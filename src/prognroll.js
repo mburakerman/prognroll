@@ -1,3 +1,4 @@
+/* PrognRoll | https://mburakerman.github.io/prognroll/ | @mburakerman | License: MIT */
 (function($) {
 $.fn.prognroll = function( options ) {
 
