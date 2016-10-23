@@ -45,7 +45,7 @@ Use body
 ```js
 $("body").prognroll();
 ```
-[Quick body demo on CodePen](https://codepen.io/).
+[Quick body demo on CodePen](http://codepen.io/anon/pen/ORdbRo)
 
 Use custom div
 ```html
