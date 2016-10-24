@@ -1,13 +1,13 @@
-# ProngnRoll
+# PrognRoll
 
 A tiny, lightweight jQuery plugin that creates scroll progress bar on the page
 
 ### Install
 
-Load jQuery and include ProngnRoll file
+Load jQuery and include PrognRoll file
 ```html
 <script src="jquery.js"></script>
-<script src="src/prongnroll.js"></script>
+<script src="src/prognroll.js"></script>
 or use CDN
 <link rel="stylesheet" href="https://code.jquery.com/jquery-3.1.1.min.js">
 <link rel="stylesheet" href="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js">
@@ -15,7 +15,7 @@ or use CDN
 
 ### Usage
 
-To see scrolling progress on your page, you need to activate ProngnRoll.
+To see scrolling progress on your page, you need to activate PrognRoll.
 
 ```js
 $(function() {
@@ -71,7 +71,7 @@ custom:true
 
 ### Size
 
-1.91 kb
+1.99 kb
 
 1.01 kb minified
 
