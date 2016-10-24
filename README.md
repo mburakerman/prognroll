@@ -73,7 +73,7 @@ custom:true
 
 1.99 kb
 
-1.01 kb minified
+1 kb minified
 
 ### License
 
