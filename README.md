@@ -71,7 +71,7 @@ custom:true
 
 ### Size
 
-1.91 kb
+1.99 kb
 
 1.01 kb minified
 
