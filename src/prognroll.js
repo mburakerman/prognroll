@@ -20,7 +20,6 @@ $("body").prepend($span);
 
 $span.css({
 position:"fixed",
-bottom:null,
 left:0,
 width:0,
 height:settings.height,
