@@ -37,7 +37,7 @@ custom:false     //If you make it true, you can add your custom div and see it's
 });
 ```
 
-### Example
+### Examples
 
 Use body
 
