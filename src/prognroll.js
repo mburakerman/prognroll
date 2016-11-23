@@ -5,7 +5,6 @@ $.fn.prognroll = function( options ) {
 var settings = $.extend({
 height:5,        //Progress bar height
 color:"#50bcb6", //Progress bar background color
-position:"top",  //Progress bar position can be "top" or "bottom"
 custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page.
 }, options );
 
@@ -20,18 +19,13 @@ $("body").prepend($span);
 
 $span.css({
 position:"fixed",
+top:0,
 left:0,
 width:0,
 height:settings.height,
 backgroundColor:settings.color,
 zIndex :9999999
 });
-
-if(settings.position === "top") {
-$span.css("top",0);
-}else {
-$span.css("bottom",0);
-}
 
 if(settings.custom===false) {
 
