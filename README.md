@@ -31,7 +31,6 @@ $(function() {
 $("body").prognroll({
 height:5,        //Progress bar height
 color:"#50bcb6", //Progress bar background color
-position:"top",  //Progress bar position can be "top" or "bottom"
 custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page.	
 });
 });
