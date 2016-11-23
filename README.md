@@ -70,9 +70,9 @@ custom:true
 
 ### Size
 
-1.99 kb
+1.84 kb
 
-1 kb minified
+966 Bytes minified
 
 ### License
 
