@@ -275,18 +275,6 @@ $(".arrow-down").css("visibility","visible");
 }
 });
 
-/*Get scroll position when the page is fully loaded*/
-$(window).on('hashchange',function() {
-//console.log($(window).scrollTop());
-});
-$(window).trigger('hashchange');
-
-if( $(window).scrollTop() > 250) {
-$(".arrow-down").css("visibility","hidden");
-}else {
-$(".arrow-down").css("visibility","visible");
-}
-/*Get scroll position when the page is fully loaded*/
 });
 </script>
 </body>
