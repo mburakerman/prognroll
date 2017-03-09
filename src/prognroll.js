@@ -39,7 +39,7 @@
 
                     var total = (windowScrollTop / (bodyHeight - windowHeight)) * 100;
 
-                    $span.css("width", total + "%");
+                    $(".bar").css("width", total + "%");
                 });
 
             } else {
@@ -52,7 +52,7 @@
 
                     var total = (customScrollTop / (customScrollHeight - customHeight)) * 100;
 
-                    $span.css("width", total + "%");
+                    $(".bar").css("width", total + "%");
                 });
 
             }
@@ -70,7 +70,7 @@
 
             var total = (windowScrollTop / (bodyHeight - windowHeight)) * 100;
 
-            $span.css("width", total + "%");
+            $(".bar").css("width", total + "%");
             /* Get scroll position on on page load */
 
         });
