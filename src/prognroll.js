@@ -70,7 +70,7 @@
 
             var total = (windowScrollTop / (bodyHeight - windowHeight)) * 100;
 
-            $(".bar").css("width", total + "%");
+            $span.css("width", total + "%");
             /* Get scroll position on on page load */
 
         });
