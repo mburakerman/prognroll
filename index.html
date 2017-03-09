@@ -264,14 +264,15 @@ $(function() {
 $("body").prognroll();
 
 $(".content").prognroll({
-custom:true
+ custom:true,
+ color:"#bc5056"
 });
 
 $(window).scroll(function() {
-if( $(window).scrollTop() > 250) {
+  if( $(window).scrollTop() > 250) {
 $(".arrow-down").css("visibility","hidden");
-}else {
-$(".arrow-down").css("visibility","visible");
+  }else {
+   $(".arrow-down").css("visibility","visible");
 }
 });
 
