@@ -8,9 +8,13 @@ Load jQuery and include PrognRoll file
 ```html
 <script src="jquery.js"></script>
 <script src="src/prognroll.js"></script>
+```
+
 or use CDN
-<link rel="stylesheet" href="https://code.jquery.com/jquery-3.1.1.min.js">
-<link rel="stylesheet" href="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js">
+
+```html
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
 ```
 
 ### Usage
