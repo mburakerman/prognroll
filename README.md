@@ -2,18 +2,23 @@
 
 > A tiny, lightweight jQuery plugin that creates scroll progress bar on the page
 
-### Install
+## Install
 
 Load jQuery and include PrognRoll file
+
 ```html
 <script src="jquery.js"></script>
 <script src="src/prognroll.js"></script>
-or use CDN
-<link rel="stylesheet" href="https://code.jquery.com/jquery-3.1.1.min.js">
-<link rel="stylesheet" href="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js">
 ```
 
-### Usage
+or use CDN
+
+```html
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+```
+
+## Usage
 
 To see scrolling progress on your page, you need to activate PrognRoll.
 
@@ -22,23 +27,23 @@ $(function() {
   $("body").prognroll();
 });
 ```
-Thats it! It's active now!
+That's it!
 
-You can also customize the progress bar.These are default settings.
+You can also customize the progress bar. These are default settings.
 
 ```js
 $(function() {
-$("body").prognroll({
-height:5,        //Progress bar height
-color:"#50bcb6", //Progress bar background color
-custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page.	
-});
+ $("body").prognroll({
+   height:5,        //Progress bar height
+   color:"#50bcb6", //Progress bar background color
+   custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page	
+ });
 });
 ```
 
-### Example
+## Examples
 
-Use body
+Body
 
 ```html
 <body>
@@ -50,9 +55,10 @@ $(function() {
   $("body").prognroll();
 });
 ```
-[Quick body demo on CodePen](http://codepen.io/anon/pen/GjzArK)
+[Body demo on CodePen](http://codepen.io/anon/pen/GjzArK)
 
-Use custom div
+Custom div
+
 ```html
 <div class="box">
 <!-- Content -->
@@ -66,16 +72,12 @@ custom:true
 });
 });
 ```
-[Quick custom div demo on CodePen](http://codepen.io/anon/pen/WGPoxm)
+[Custom div demo on CodePen](http://codepen.io/anon/pen/WGPoxm)
 
-### Size
-
-1.84 kb
+## Size
 
 966 Bytes minified
 
-### License
+## License
 
 Licensed under the MIT License.
-
-
