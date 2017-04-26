@@ -68,7 +68,7 @@ Custom div
 ```js
 $(function() {
 $(".box").prognroll({
-custom:true
+  custom:true
 });
 });
 ```
