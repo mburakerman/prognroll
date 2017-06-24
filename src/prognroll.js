@@ -35,7 +35,7 @@
                     e.preventDefault();
                     var windowScrollTop = $(window).scrollTop();
                     var windowHeight = $(window).outerHeight();
-                    var bodyHeight = $("body").outerHeight();
+                    var bodyHeight = $(document).height();
 
                     var total = (windowScrollTop / (bodyHeight - windowHeight)) * 100;
 
