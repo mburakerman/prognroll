@@ -33,11 +33,11 @@ You can also customize the progress bar. These are default settings.
 
 ```js
 $(function() {
- $("body").prognroll({
-   height:5,        //Progress bar height
-   color:"#50bcb6", //Progress bar background color
-   custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page	
- });
+  $("body").prognroll({
+    height: 5, //Progress bar height
+    color: "#50bcb6", //Progress bar background color
+    custom: false //If you make it true, you can add your custom div and see it's scroll progress on the page
+  });
 });
 ```
 
@@ -67,16 +67,16 @@ Custom div
 
 ```js
 $(function() {
-$(".box").prognroll({
-  custom:true
-});
+  $(".box").prognroll({
+    custom: true
+  });
 });
 ```
 [Custom div demo on CodePen](http://codepen.io/anon/pen/WGPoxm)
 
 ## Size
 
-966 Bytes minified
+0.9 kb minified
 
 ## License
 
