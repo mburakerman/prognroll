@@ -5,8 +5,12 @@
         var settings = $.extend({
             height: 5, //Progress bar height
             color: "#50bcb6", //Progress bar background color
-            custom: false //If you make it true, you can add your custom div and see it's scroll progress on the page.
+            custom: false, //If you make it true, you can add your custom div and see it's scroll progress on the page.
+            direction: "vertical"
         }, options);
+
+        var $container;
+        var containerScrollTop, containerHeight, contaierScrollHeight, containerScrollLeft, containerWidth, contaierScrollWidth;
 
         return this.each(function() {
             if ($(this).data('prognroll')) {
@@ -29,7 +33,51 @@
                 zIndex: 9999999
             });
 
+
+
             if (settings.custom === false) {
+                $container = $(window);
+            }
+            else
+            {
+                $container = $(this);
+            }
+
+            console.log("direction "+settings.direction);
+
+            $container.scroll(function(e) {
+                $container = $(this);
+                e.preventDefault();
+
+                if(settings.direction === "horizontal")
+                {
+                        console.log("H "+$container.scrollLeft())
+                        containerScrollLeft =     $container.scrollLeft();
+                        containerWidth = $container.outerWidth();
+                        if(settings.custom === false)
+                            contaierScrollWidth = $(document).width();
+                        else
+                            contaierScrollWidth = $container.prop("scrollWidth");
+
+                        var total = (containerScrollLeft / (contaierScrollWidth - containerWidth)) * 100;
+                        $(".bar").css("width", total + "%");
+                    }
+                    else
+                    {
+                        containerScrollTop =     $container.scrollTop();
+                        containerHeight = $container.outerHeight();
+
+                        if(settings.custom === false)
+                            contaierScrollWidth = $(document).height();
+                        else
+                            contaierScrollHeight = $container.prop("scrollHeight");
+
+                        var total = (containerScrollTop / (contaierScrollHeight - containerHeight)) * 100;
+                        $(".bar").css("width", total + "%");
+                    }
+            });
+
+            /*if (settings.custom === false) {
 
                 $(window).scroll(function(e) {
                     e.preventDefault();
@@ -55,7 +103,7 @@
                     $(".bar").css("width", total + "%");
                 });
 
-            }
+            }*/
 
             /* Get scroll position on on page load */
             $(window).on('hashchange', function(e) {
