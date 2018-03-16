@@ -230,9 +230,14 @@ $(function() {
 
 $("body").prognroll({direction: "horizontal"});
 
-$(".content").prognroll({
+$(".content1, .content2,.content3").prognroll({
   custom:true,
   direction: "horizontal"
+});
+
+$(".content4").prognroll({
+    custom:true,
+    direction: "vertical"
 });
 
 $(window).scroll(function() {

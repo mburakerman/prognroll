@@ -2,6 +2,25 @@
 
 > A tiny, lightweight jQuery plugin that creates scroll progress bar on the page
 
+
+## Update
+This plugin is customized to support  horizontal scrolling progress.
+Extra parameter "direction" is added to handle this.
+Updated JS file is in new branch "horizontalprogress" in fork https://github.com/pravid/prognroll
+JS path: https://raw.githubusercontent.com/pravid/prognroll/horizontalprogress/src/prognroll.js
+CDN path: https://cdn.rawgit.com/pravid/prognroll/horizontalprogress/src/prognroll.js
+
+Code sample:
+$(".box2").prognroll({
+    custom: true,
+    direction: "horizontal"
+    //or direction: "vertical"
+});
+
+Demo: https://codepen.io/pravid/pen/VXjNbb
+
+
+
 ## Install
 
 Load jQuery and include PrognRoll file
