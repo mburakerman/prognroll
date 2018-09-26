@@ -14,11 +14,13 @@ JS path: https://raw.githubusercontent.com/pravid/prognroll/horizontalprogress/s
 CDN path: https://cdn.rawgit.com/pravid/prognroll/horizontalprogress/src/prognroll.js
 
 Code sample:
+```js
 $(".box2").prognroll({
     custom: true,
     direction: "horizontal"
     //or direction: "vertical"
 });
+```
 
 Demo: https://codepen.io/pravid/pen/VXjNbb
 
