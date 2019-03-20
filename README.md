@@ -34,9 +34,9 @@ You can also customize the progress bar. These are default settings.
 ```js
 $(function() {
   $("body").prognroll({
-    height: 5, //Progress bar height
-    color: "#50bcb6", //Progress bar background color
-    custom: false //If you make it true, you can add your custom div and see it's scroll progress on the page
+    height: 5, // progress bar height
+    color: "#50bcb6", // progress bar background color
+    custom: false // if you make it true, you can add your custom div and see it's scroll progress on the page
   });
 });
 ```
