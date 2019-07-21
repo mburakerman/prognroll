@@ -14,57 +14,62 @@
             }
             $(this).data('prognroll', true);
 
-            var $span = $("<span>", {
-                class: "bar"
+            var progressBar = $("<span>", {
+                class: "prognroll-bar"
             });
-            $("body").prepend($span);
+            $("body").prepend(progressBar);
 
-            $span.css({
+            progressBar.css({
                 position: "fixed",
                 top: 0,
                 left: 0,
                 width: 0,
                 height: settings.height,
                 backgroundColor: settings.color,
-                zIndex: 9999999
+                zIndex: 2147483647
             });
 
-            if (settings.custom === false) {
+            var globals = {
+                "progressBar": $(".prognroll-bar"),
+                "windowScrollTop": $(window).scrollTop(),
+                "windowOuterHeight": $(window).outerHeight(),
+                "bodyHeight": $(document).height()
+            }
 
+            function bindWindowScroll() {
                 $(window).scroll(function (e) {
                     e.preventDefault();
-                    var windowScrollTop = $(window).scrollTop();
-                    var windowHeight = $(window).outerHeight();
-                    var bodyHeight = $(document).height();
+                    globals.windowScrollTop = $(window).scrollTop();
+                    globals.windowOuterHeight = $(window).outerHeight();
+                    globals.bodyHeight = $(document).height();
 
-                    var total = (windowScrollTop / (bodyHeight - windowHeight)) * 100;
-
-                    $(".bar").css("width", total + "%");
+                    var total = (globals.windowScrollTop / (globals.bodyHeight - globals.windowOuterHeight)) * 100;
+                    globals.progressBar.css("width", total + "%");
                 });
+            }
 
+            if (settings.custom === false) {
+                bindWindowScroll();
             } else {
+                // if el has no max-height set
+                if ($(this).css("max-height") == "none") {
+                    bindWindowScroll();
+                } else {
+                    $(this).scroll(function (e) {
+                        e.preventDefault();
+                        var customScrollTop = $(this).scrollTop();
+                        var customOuterHeight = $(this).outerHeight();
+                        var customScrollHeight = $(this).prop("scrollHeight");
 
-                $(this).scroll(function (e) {
-                    e.preventDefault();
-                    var customScrollTop = $(this).scrollTop();
-                    var customHeight = $(this).outerHeight();
-                    var customScrollHeight = $(this).prop("scrollHeight");
-
-                    var total = (customScrollTop / (customScrollHeight - customHeight)) * 100;
-
-                    $(".bar").css("width", total + "%");
-                });
-
+                        var total = (customScrollTop / (customScrollHeight - customOuterHeight)) * 100;
+                        globals.progressBar.css("width", total + "%");
+                    });
+                }
             }
 
             // get scroll position on on page load 
-            var windowScrollTop = $(window).scrollTop();
-            var windowHeight = $(window).outerHeight();
-            var bodyHeight = $("body").outerHeight();
-
-            var total = (windowScrollTop / (bodyHeight - windowHeight)) * 100;
-            $(".bar").css("width", total + "%");
-
+            var total = (globals.windowScrollTop / (globals.bodyHeight - globals.windowOuterHeight)) * 100;
+            globals.progressBar.css("width", total + "%");
         });
     };
 })(jQuery);
