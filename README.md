@@ -55,7 +55,7 @@ $(function() {
   $("body").prognroll();
 });
 ```
-[Body demo on CodePen](http://codepen.io/anon/pen/GjzArK)
+[Body demo on CodePen](https://codepen.io/anon/pen/NQqLOG)
 
 Custom div
 
