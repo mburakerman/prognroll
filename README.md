@@ -76,7 +76,7 @@ $(function() {
 
 ## Size
 
-0.9 kb minified
+1 kb minified
 
 ## License
 
