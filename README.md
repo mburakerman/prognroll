@@ -15,7 +15,7 @@ or use CDN
 
 ```html
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://rawcdn.githack.com/mburakerman/prognroll/0feda211643153bce2c69de32ea1b39cdc64ffbe/src/prognroll.js"></script>
+<script src="https://rawcdn.githack.com/mburakerman/prognroll/5f8df2b06051e1508396d276d470e1153a4f8d1b/src/prognroll.js"></script>
 ```
 
 ## Usage
