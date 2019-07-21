@@ -72,7 +72,7 @@ $(function() {
   });
 });
 ```
-[Custom div demo on CodePen](http://codepen.io/anon/pen/WGPoxm)
+[Custom div demo on CodePen](https://codepen.io/anon/pen/oKXPQP)
 
 ## Size
 
