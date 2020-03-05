@@ -8,16 +8,17 @@
             custom: false // if you make it true, you can add your custom div and see it's scroll progress on the page
         }, options);
 
-        return this.each(function () {
-            if ($(this).data('prognroll')) {
+        var progressBar = $("<span>", {
+            class: "prognroll-bar",
+        });
+
+        return this.each(function (i, el) {
+            if ($(this).data("prognroll")) {
                 return false;
             }
-            $(this).data('prognroll', true);
+            $(this).data("prognroll", true);
 
-            var progressBar = $("<span>", {
-                class: "prognroll-bar"
-            });
-            $("body").prepend(progressBar);
+            $("body").prepend(progressBar).end().find(".prognroll-bar").not(":first").remove();
 
             progressBar.css({
                 position: "fixed",
