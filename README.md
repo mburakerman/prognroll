@@ -15,7 +15,7 @@ or use CDN
 
 ```html
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://rawcdn.githack.com/mburakerman/prognroll/5f8df2b06051e1508396d276d470e1153a4f8d1b/src/prognroll.js"></script>
+<script src="https://raw.githack.com/mburakerman/prognroll/master/src/prognroll.min.js"></script>
 ```
 
 ## Usage
@@ -72,7 +72,7 @@ $(function() {
   });
 });
 ```
-[Custom div demo on CodePen](https://codepen.io/anon/pen/oKXPQP)
+[Custom div demo on CodePen](https://jsfiddle.net/fs16tckq/)
 
 ## Size
 
