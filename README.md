@@ -7,13 +7,6 @@
 Load jQuery and include PrognRoll file
 
 ```html
-<script src="jquery.js"></script>
-<script src="src/prognroll.js"></script>
-```
-
-or use CDN
-
-```html
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://raw.githack.com/mburakerman/prognroll/master/src/prognroll.min.js"></script>
 ```
@@ -55,7 +48,7 @@ $(function() {
   $("body").prognroll();
 });
 ```
-[Body demo on CodePen](https://codepen.io/anon/pen/NQqLOG)
+[Body demo on JSFiddle](https://jsfiddle.net/7xLcgma0/)
 
 Custom div
 
@@ -72,7 +65,7 @@ $(function() {
   });
 });
 ```
-[Custom div demo on CodePen](https://jsfiddle.net/fs16tckq/)
+[Custom div demo on JSFiddle](https://jsfiddle.net/fs16tckq/)
 
 ## Size
 
