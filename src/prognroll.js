@@ -20,7 +20,7 @@
 
             $("body").prepend(progressBar).end().find(".prognroll-bar").not(":first").remove();
 
-            progressBar.css({
+            $(".prognroll-bar").css({
                 position: "fixed",
                 top: 0,
                 left: 0,
@@ -31,7 +31,6 @@
             });
 
             var globals = {
-                "progressBar": $(".prognroll-bar"),
                 "windowScrollTop": $(window).scrollTop(),
                 "windowOuterHeight": $(window).outerHeight(),
                 "bodyHeight": $(document).height()
@@ -45,7 +44,7 @@
                     globals.bodyHeight = $(document).height();
 
                     var total = (globals.windowScrollTop / (globals.bodyHeight - globals.windowOuterHeight)) * 100;
-                    globals.progressBar.css("width", total + "%");
+                    $(".prognroll-bar").css("width", total + "%");
                 });
             }
 
@@ -63,14 +62,14 @@
                         var customScrollHeight = $(this).prop("scrollHeight");
 
                         var total = (customScrollTop / (customScrollHeight - customOuterHeight)) * 100;
-                        globals.progressBar.css("width", total + "%");
+                        $(".prognroll-bar").css("width", total + "%");
                     });
                 }
             }
 
             // get scroll position on on page load 
             var total = (globals.windowScrollTop / (globals.bodyHeight - globals.windowOuterHeight)) * 100;
-            globals.progressBar.css("width", total + "%");
+            $(".prognroll-bar").css("width", total + "%");
         });
     };
 })(jQuery);
