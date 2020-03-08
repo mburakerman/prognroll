@@ -65,7 +65,7 @@ $(function() {
   });
 });
 ```
-[Custom div demo on JSFiddle](https://jsfiddle.net/fs16tckq/)
+[Custom div demo on JSFiddle](https://jsfiddle.net/37j4uh2d/)
 
 ## Size
 
