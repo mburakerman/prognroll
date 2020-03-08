@@ -48,7 +48,7 @@ $(function() {
   $("body").prognroll();
 });
 ```
-[Body demo on JSFiddle](https://jsfiddle.net/7xLcgma0/)
+[Body demo on JSFiddle](https://jsfiddle.net/78rwvmu0/)
 
 Custom div
 
