@@ -1,0 +1,13 @@
+lockfileVersion: 5.3
+
+specifiers:
+  jquery: '>=1.9.1'
+
+dependencies:
+  jquery: 3.6.0
+
+packages:
+
+  /jquery/3.6.0:
+    resolution: {integrity: sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==}
+    dev: false
