@@ -4,11 +4,18 @@
 
 ## Install
 
-Load jQuery and include PrognRoll file
+- Load jQuery and include PrognRoll file
 
 ```html
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://raw.githack.com/mburakerman/prognroll/master/src/prognroll.min.js"></script>
+```
+
+- npm install
+```bash
+pnpm i @cherrol/prognroll -S
+# npm i @cherrol/prognroll -S
+# yarn add @cherrol/prognroll -S
 ```
 
 ## Usage
