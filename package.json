@@ -3,10 +3,18 @@
   "author": {
     "name": "Mehmet Burak Erman"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/prognroll.js",
   "license": "MIT",
   "description": "A tiny, lightweight jQuery plugin that creates scroll progress bar on the page.",
+  "homepage": "https://github.com/cherrol/prognroll#readme",
+  "bugs": {
+    "url": "https://github.com/cherrol/prognroll/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cherrol/prognroll.git"
+  },
   "keywords": [
     "jquery",
     "prognroll",
